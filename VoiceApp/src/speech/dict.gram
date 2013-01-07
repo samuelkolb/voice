@@ -1,0 +1,14 @@
+#JSGF V1.0;
+grammar commands;
+public <command> = <single_command>;
+
+<single_command> =
+	<single_music_command>
+	| <single_app_command>;
+					
+<single_music_command> =
+	play
+	| pause;
+
+<single_app_command> =
+	quit the app;
